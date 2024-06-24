@@ -5,7 +5,21 @@ jobs:
     run-testimio-cli:
         runs-on: ubuntu-latest
         steps:
+            - uses: actions/checkout@v2name: Testim E2E
+on: [push]
+
+jobs:
+    run-testimio-cli:
+        runs-on: ubuntu-latest
+        steps:
             - uses: actions/checkout@v2
+            - uses: actions/setup-node@v4
+              with:
+                node-version: '18'
+                # You can also change 'lts' to any supported LTS Node.js version.
+            - run: npm install -g @testim/testim-cli
+            - run: testim --token "HKetz9DBw1e7W2clwxFpz7rQRf4EZqq2DKAY2lrIm3KxVBuFn1" --project "p5e4DwaRVyWqMvOtwfN1" --grid "Testim-Grid" --mode "extension" --branch "Develop" --label "Smoke" --test-config "testo"
+
             - uses: actions/setup-node@v4
               with:
                 node-version: '14'
