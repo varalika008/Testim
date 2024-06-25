@@ -11,4 +11,4 @@ jobs:
                 node-version: '18'
                 # You can also change 'lts' to any supported LTS Node.js version.
             - run: npm install -g @testim/testim-cli
-            - run: testim --token "HKetz9DBw1e7W2clwxFpz7rQRf4EZqq2DKAY2lrIm3KxVBuFn1" --project "p5e4DwaRVyWqMvOtwfN1" --grid "Testim-Grid" --mode "extension" --branch "Varalika Demo" --label "Smoke" --test-config "HD 1366x768" --timeout 60000
+            - run: testim --token "HKetz9DBw1e7W2clwxFpz7rQRf4EZqq2DKAY2lrIm3KxVBuFn1" --project "p5e4DwaRVyWqMvOtwfN1" --grid "Testim-Grid" --mode "extension" --branch "Varalika Demo" --label "Regression"
